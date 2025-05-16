@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>MYLOUNDRY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col h-screen">
+        <!-- Header -->
+        <div class="bg-green-600 text-white flex justify-between items-center p-4">
+            <div class="text-lg font-bold">MYLOUNDRY</div>
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>21-Oct-2024</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>PENDATAAN CUCIAN</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex flex-1 p-4 space-x-4">
+            <!-- Left Panel -->
+            <div class="w-1/3 bg-white p-4 rounded shadow">
+                <input type="text" class="w-full p-2 mb-2 border rounded" value="241018525752" readonly>
+                <div class="flex space-x-2 mb-2">
+                    <button class="bg-gray-200 p-2 rounded w-1/3">[F1] IDPPS</button>
+                    <input type="text" class="w-2/3 p-2 border rounded" placeholder="Nama">
+                </div>
+                <input type="text" class="w-full p-2 mb-2 border rounded" placeholder="Kamar">
+                <div class="flex space-x-2 mb-2">
+                    <button class="bg-gray-200 p-2 rounded w-1/3">[F2] Cari produk berdasarkan kode atau nama</button>
+                    <input type="text" class="w-1/3 p-2 border rounded" value="1">
+                </div>
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-yellow-500 text-white">
+                            <th class="p-2">JENIS</th>
+                            <th class="p-2">Qty</th>
+                            <th class="p-2"><i class="fas fa-trash"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-2 text-center" colspan="3">No data available in table</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt-4">
+                    <div class="flex justify-between">
+                        <span>Bnyk Pesanan</span>
+                        <span>0</span>
+                    </div>
+                    <div class="flex justify-between bg-green-100 p-2 mt-2 rounded">
+                        <span>Total Cucian</span>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="w-2/3">
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="border-b pb-2 mb-2">
+                        <span class="text-lg font-bold">Menu</span>
+                    </div>
+                    <div class="grid grid-cols-4 gap-2">
+                        <button class="bg-blue-500 text-white p-4 rounded">HANDUK<br>103</button>
+                        <button class="item-button" data-name="Songkok Putih" data-code="11">Songkok Putih</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">SONGKOK WARNA<br>12</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">BAJU SERAGAM<br>21</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">HEM PANJANG<br>22</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">HEM PENDEK<br>23</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">TAQWA PANJANG<br>31</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">TAQWA PENDEK<br>32</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">KAOS OLAHRAGA<br>41</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">KAOS PANJANG<br>42</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">KAOS PENDEK<br>43</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">JAKET SWEATER<br>51</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">SARUNG SERAGAM<br>61</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">SARUNG BIASA<br>62</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">CELANA OLAHRAGA<br>71</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">CELANA PENDEK<br>73</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">CD SEGITIGA<br>81</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">CD SEGIEMPAT<br>82</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">JUBAH<br>91</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">SURBAN<br>92</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">SAJADAH<br>93</button>
+                        <button class="bg-blue-500 text-white p-4 rounded">SELIMUT<br>94</button>
+                    </div>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <button class="bg-blue-400 text-white p-4 rounded w-1/2 mr-2">[F5] BATAL</button>
+                    <button class="bg-green-500 text-white p-4 rounded w-1/2 ml-2">[F4] PRINT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>

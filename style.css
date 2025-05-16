@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header .logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header .dashboard {
+    font-size: 16px;
+}
+
+.header .date,
+.header .action {
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.right-section {
+    flex: 2;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-group input {
+    display: block;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    flex: 3;
+}
+
+.search-bar input[type="number"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.summary {
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.menu button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    border-top: 1px solid #ccc;
+}
+
+.footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer .cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.footer .cancel:hover {
+    background-color: #a71d2a;
+}
+
+.footer .print {
+    background-color: #28a745;
+    color: white;
+}
+
+.footer .print:hover {
+    background-color: #19692c;
+}
